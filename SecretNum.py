@@ -16,7 +16,7 @@ guess(10)
 
 user_request = input("Would you like to play again? (yes/no): ")
 if user_request == "yes":
-    guess(10);
+    guess(x);
 else:
     print("Have a nice day!");
     exit();
