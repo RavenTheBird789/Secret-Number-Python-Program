@@ -1,10 +1,10 @@
 import random 
 
-def guess(x):
-    random_number = random.randint(1, x)
+def guess():
+    random_number = random.randint(1, 10)
     guess = 0
     while guess != random_number:
-        guess = int(input(f"Guess a number between 1 and {x}: "))
+        guess = int(input(f"Guess a number between 1 and 10: "))
         if guess < random_number:
             print("Sorry, guess again. Too low.")
         elif guess > random_number: 
@@ -14,14 +14,14 @@ def guess(x):
     
     user_request = input("Would you like to play again? (yes/no): ")
     if user_request == "yes":
-        guess(10);
+        guess();
     elif user_request == "y":
-        guess(10);
+        guess();
     elif user_request == "Yes":
-        guess(10);
+        guess();
     elif user_request == "Y":
-        guess(10);
+        guess();
     else:
         print("Have a nice day!");
         exit();
-guess(10);
+guess();
