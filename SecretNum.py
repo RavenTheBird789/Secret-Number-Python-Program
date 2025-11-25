@@ -11,18 +11,17 @@ def guess(x):
             print("Sorry, guess again. Too high.") 
 
     print(f"Congrats! You have guessed the number {random_number} correctly!")
-
-guess(10)
-
-user_request = input("Would you like to play again? (yes/no): ")
-if user_request == "yes":
-    guess(10);
-elif user_request == "y":
-    guess(10);
-elif user_request == "Yes":
-    guess(10);
-elif user_request == "Y":
-    guess(10);
-else:
-    print("Have a nice day!");
-    exit();
+    
+    user_request = input("Would you like to play again? (yes/no): ")
+    if user_request == "yes":
+        guess(10);
+    elif user_request == "y":
+        guess(10);
+    elif user_request == "Yes":
+        guess(10);
+    elif user_request == "Y":
+        guess(10);
+    else:
+        print("Have a nice day!");
+        exit();
+guess(10);
