@@ -13,3 +13,10 @@ def guess(x):
     print(f"Congrats! You have guessed the number {random_number} correctly!")
 
 guess(10)
+
+user_request = input("Would you like to play again? (yes/no): ")
+if user_request == "yes":
+    guess(10);
+else:
+    print("Have a nice day!");
+    exit();
