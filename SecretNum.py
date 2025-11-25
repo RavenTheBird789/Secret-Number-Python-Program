@@ -16,7 +16,13 @@ guess(10)
 
 user_request = input("Would you like to play again? (yes/no): ")
 if user_request == "yes":
-    guess(x);
+    guess(10);
+elif user_request == "y":
+    guess(10);
+elif user_request == "Yes":
+    guess(10);
+elif user_request == "Y":
+    guess(10);
 else:
     print("Have a nice day!");
     exit();
